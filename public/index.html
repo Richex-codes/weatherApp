@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .card {
+        background-color: rgba(222, 166, 222, 0.5);
+      }
+
+      .searched {
+        width: 30%;
+      }
+
+      .search {
+        width: 100%;
+      }
+
+      .Next3 {
+        overflow-x: auto;
+      }
+
+      .Next3::-webkit-scrollbar {
+        width: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-purple-500">
+    <div class="main flex mt-40 justify-center items-center">
+      <div class="card flex flex-col justify-center p-10 rounded-lg">
+        <!--searched -->
+        <div class="firstSerach">
+          <h1 class="text-3xl font-bold text-white text-center mb-4">
+            Weather App
+          </h1>
+          <input
+            class="rounded-lg placeholder:text-sm px-2 py-1 search mb-4 focus:outline-none searchbar"
+            type="text"
+            placeholder="Enter city"
+          />
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-purple-200 px-7 py-2 text-sm rounded-md block text-white button"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="secondSearch hidden">
+          <div class="weather">
+            <div class="flex justify-center">
+              <img
+                class="img1"
+                src="https://openweathermap.org/img/wn/04n@4x.png"
+                alt=""
+              />
+            </div>
+            <div class="Weather-desc">
+              <h1 class="temp text-6xl text-center text-white mb-2">
+                22&#176;C
+              </h1>
+              <h1 class="city text-white text-2xl text-center mb-2">Nigeria</h1>
+              <h1 class="desc text-white text-xl text-center">moderate rain</h1>
+            </div>
+            <div class="Next3 flex mt-12">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
